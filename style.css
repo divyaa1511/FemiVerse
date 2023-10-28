@@ -1,0 +1,464 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.container{
+    width:100%;
+    height:98vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/flower.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:0 8%; */
+    background-color:rgb(241, 230, 213) ;
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(236, 204, 204);
+    
+} 
+nav{
+width: 100%;
+height: 100%;
+ background-color:rgb(245, 228, 202) ;
+ text-align: right;
+ border: 1px solid rgb(241, 230, 213);
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 5%;
+    padding-top:1em;
+}
+nav ul li a{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.im5{
+    display: flex;
+    position: relative;
+    margin-right: 35%;
+    
+}
+
+.im5 img{
+    margin-top: 3%;
+    width:250%;
+    height: 80%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border: 4px solid white;
+    
+}
+
+
+.text-box{
+    display: flex;
+    
+    color: #0a0708;
+
+    box-sizing: border-box;
+
+}
+
+.text-box p{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 110px;
+text-shadow: #0f0f0f;
+
+margin-left: 20%;
+padding: 0px 0px;
+text-align: CENTER;
+margin-top: 1%;
+color: transparent; 
+-webkit-text-stroke : 1px #0a0a0a; 
+animation: text-box 3s ease-in-out infinite; 
+}
+
+@keyframes text-box {
+    0% {
+        -webkit-text-stroke : 1px #fa5454; /* Initial font size */
+    }
+    20% {
+        -webkit-text-stroke : 1px #91075c; /* Enlarged font size at the midpoint of the animation */
+    }
+    60% {
+        -webkit-text-stroke : 1px #cf1391; /* Enlarged font size at the midpoint of the animation */
+    }
+    80% {
+        -webkit-text-stroke : 1px #df2b52; /* Enlarged font size at the midpoint of the animation */
+    }
+    100% {
+        -webkit-text-stroke : 1px #6b026b;  /* Back to the initial font size */
+    }
+}
+
+
+
+
+.container2{
+   position: relative;
+   background-color:rgb(241, 230, 213) ;
+   
+    display: flex;
+    /* border: 2px solid black; */
+    background-attachment: fixed;
+}
+
+.im1 img{
+   width: 120%;height: 100%;
+  
+
+}
+.text-2{
+    margin-top:1%;
+   text-align: center;
+   width: 70%;
+   height: 30%;
+   right:5%;
+   justify-content:center;
+
+}
+.text-2 p{
+    margin-top:5%;
+   border: 2px solid rgb(10, 9, 9);
+    padding:20% 15%;
+    margin-right: 5%;
+    background-color: rgb(238, 201, 201);
+  font-size: 1.5em;
+    color:rgb(14, 11, 11);
+    font-family: 'Dancing Script', cursive;
+    animation: text-box1 3s ease-in-out infinite; 
+} 
+
+
+@keyframes text-box1 {
+
+    50% {
+        border: 2px solid  #080808; /* Enlarged font size at the midpoint of the animation */
+    }
+
+    100% {
+        border: 2px solid  #f8f7f8;  /* Back to the initial font size */
+    }
+}
+
+.text-2 h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #0f0f0f;
+    animation: moveAndScale 6s linear infinite;
+}
+
+
+
+
+.container3{
+   display:flex;
+    position: relative;
+    background-color:rgb(241, 230, 213) ;
+    
+    padding-bottom: 10%;
+    
+   /* border:2px solid black; */
+}
+ .im2 img{
+    width: 140%;
+    height:80%;
+ } 
+ @keyframes moveAndScale {
+    0% {
+      transform: translateX(10%) scale(0.9);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+  }
+  
+  .moving-image {
+    animation: moveAndScale 6s linear infinite;
+  }
+
+.text-3{
+    width:50%;
+    
+
+}
+
+form { 
+    max-width:420px; 
+    margin:50px auto;
+    margin-left: 25%;
+    
+text-align: left;
+margin-top: 5%; }
+
+.feedback-input {
+    color:black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:3px solid rgb(252, 248, 248);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:0px solid #f8f7f7; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#f5f6f7;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:rgb(144, 144, 148);
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#444036; }
+
+  
+  .text-3 h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.7em;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 8%;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #141414;
+    animation: moveAndScale2 6s linear infinite;
+    
+}
+
+@keyframes moveAndScale2 {
+    100% {
+      transform: translateX(10%) scale(0.9);
+    }
+    0% {
+      transform: translateX(0) scale(1);
+    }
+  }
+
+.container3 img{
+    width:95%;
+    height:75%;
+    align-items: center;
+   border: 5px solid  white;
+    margin-left: 10%;
+    margin-top: 15%;
+    border-radius: 50%;
+}
+.im3{
+    /* background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/bb.jpg);
+    background-size: cover;
+    background-position: center; */
+    padding:0 8%;
+}
+
+
+.footer {
+    
+    position: relative;
+    width: 92.4%;
+    background: #f8ccdb;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: rgb(39, 38, 38);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color:rgb(7, 7, 7);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: rgb(5, 5, 5);
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("images/finally.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+
+
+
+/* Responsive Styles */
+@media (max-width: 920px) {
+    
+    .text-2 {
+        width: 80%;
+        height: 90%;
+        padding: 2%;
+    }
+
+    .text-2 p {
+        padding: 2% 5%;
+        font-size: 1em;
+    }
+
+    .text-2 h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-2 {
+        width: 90%;
+        height: auto;
+        padding: 2%;
+    }
+
+    .text-2 p {
+        padding: 2% 2%;
+        font-size: 0.7em;
+    }
+    .text-2 p{
+        margin-top:3%;}
+    .text-2 h1 {
+        font-size: 1.2em;
+    }
+    .text-box p{
+      
+        font-size: 6px;
+        
+        
+        }
+        nav ul li a{
+            
+        font-size: 20px;
+}
+nav ul li{
+    margin: 10px 15px;
+}
+}
+@media (max-width: 870px) {
+   
+    .text-box p{
+      
+    font-size: 60px;
+    
+    
+    }
+    nav ul li{
+        margin: 10px 25px;
+    }
+    nav ul li a{
+        
+        font-size: 25px;
+}}
